@@ -1,0 +1,427 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>HTML Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            width: 100% !important;
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+            margin: 0;
+            padding: 0;
+            line-height: 100%;
+        }
+
+        [style*="Montserrat"] {
+            font-family: 'Montserrat', arial, sans-serif !important;
+        }
+
+        img {
+            outline: none;
+            text-decoration: none;
+            border: none;
+            -ms-interpolation-mode: bicubic;
+            max-width: 100% !important;
+            margin: 0;
+            padding: 0;
+            display: block;
+        }
+
+        .banner-td {
+            background: url('1.jpg') no-repeat center;
+            background-size: cover;
+            padding-top: 410px;
+            padding-bottom: 60px;
+        }
+
+        table td {
+            border-collapse: collapse;
+        }
+
+        table {
+            border-collapse: collapse;
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+
+        .features-td {
+            padding-top: 80px;
+            padding-bottom: 40px;
+        }
+
+        .features-td h1 {
+            color: #394B50;
+            font-size: 25px;
+            line-height: 1.3em;
+        }
+
+        .features-td h2 {
+            color: #394B50;
+            font-size: 18px;
+            line-height: 1.3em;
+            padding-bottom: 20px;
+        }
+
+        .features-td p {
+            color: rgb(27, 30, 31);
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 26px;
+            letter-spacing: 0.28px;
+        }
+
+        .features-td span {
+            font-weight: 700;
+            color: #1e1148;
+            text-decoration: underline;
+        }
+
+        .blockqoute-td {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .block-td p {
+            color: #8c8c8c;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 30px;
+            letter-spacing: 0.28px;
+        }
+
+        .block-table td {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        .block-table {
+            border-top: 1px solid #e6e6e6;
+            border-left: 1px solid #e6e6e6;
+            border-right: 1px solid #e6e6e6;
+            border-bottom: 1px solid #e6e6e6;
+        }
+
+        .footer-td {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        .footer-menu-td {
+            padding-top: 10px;
+            padding-bottom: 35px;
+        }
+
+        .footer-menu-td p {
+            color: #bcc9dd;
+            font-size: 14px;
+            font-weight: 400;
+            letter-spacing: 0.36px;
+            text-decoration: none;
+        }
+
+        .footer-menu-td a {
+            color: #bcc9dd;
+            font-size: 14px;
+            font-weight: 400;
+            letter-spacing: 0.36px;
+            text-decoration: none;
+        }
+
+        .copyright-td {
+            color: #bcc9dd;
+            font-size: 12px;
+            font-weight: 400;
+            letter-spacing: 0.31px;
+        }
+
+        .copyright-td p {
+            font-weight: 400;
+            color: #bcc9dd;
+            padding-bottom: 15px;
+        }
+
+        .copyright-link {
+            font-weight: 700;
+            font-size: 16px;
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .copyright-td .btn {
+            text-decoration: none;
+            padding-top: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 10px;
+            color: #ffffff;
+            background: #241359;
+            border: 1px solid #8c8c8c;
+        }
+
+        @media (max-width: 870px) {
+            .table-850 {
+                width: 600px !important;
+            }
+
+            .table-600 {
+                width: 550px !important;
+            }
+
+            .block-table {
+                width: 200px !important;
+            }
+
+            .block-table p br {
+                display: none !important;
+            }
+
+            .features-td td {
+                display: block !important;
+                margin-bottom: 50px !important;
+            }
+        }
+
+        @media (max-width: 620px) {
+            .table-850 {
+                width: 400px !important;
+            }
+
+            .table-600 {
+                width: 320px !important;
+            }
+
+            .block-td {
+                display: block !important;
+                margin-bottom: 50px !important;
+                padding: 0 !important;
+            }
+
+            .blockqoute-td tr {
+                display: block !important;
+                margin: 0 auto !important;
+            }
+
+            .block-table {
+                width: 320px !important;
+                display: block !important;
+                margin: 0 auto !important;
+            }
+
+            .logo {
+                display: block !important;
+                margin: 0 auto !important;
+                text-align: center !important;
+                width: 40px !important;
+                margin-bottom: 20px !important;
+            }
+
+            .logo img {
+                margin: 0 auto !important;
+            }
+
+
+        }
+
+        @media (max-width: 420px) {
+            .table-850 {
+                width: 300px !important;
+            }
+
+            .table-600 {
+                width: 260px !important;
+            }
+
+            .block-table {
+                width: 260px !important;
+            }
+
+            .blockqoute-td {
+                padding-top: 20px !important;
+                padding-bottom: 20px !important;
+            }
+
+            .footer-menu-td table {
+                width: 260px !important;
+            }
+        }
+    </style>
+</head>
+
+<body style="margin: 0; padding: 0;">
+    <div style="font-size:0px;font-color:#ffffff;opacity:0;visibility:hidden;width:0;height:0;display:none;">ЗТИ
+        празднует День рождения</div>
+    <table cellpadding="0" cellspacing="0" width="100%" bgcolor="#e6e9f2">
+        <tr>
+            <td>
+                <table class="main table-850" cellpadding="0" cellspacing="0" width="850" align="center">
+                    <tr>
+                        <td height="30" width="850"></td>
+                    </tr>
+                    <tr>
+                        <td class="banner-td">
+                            <!-- <img src="../work-email/10.06.jpg" alt="banner" /> -->
+                            <table class="table-600 table-social" cellpadding="0" cellspacing="0" width="150"
+                                align="center">
+                                <tr>
+                                    <td align="center" class="footer-logo social"><a
+                                            href="https://www.instagram.com/zti.ru" target="_blank"><img
+                                                alt="instagram-logo" src="insta.png"
+                                                style="height: 24px; width: 24px;" /></a></td>
+                                    <td align="center" class="footer-logo social"><a
+                                            href="https://www.facebook.com/zti.ru" target="_blank"><img
+                                                alt="facebook-logo" src="facebook.png"
+                                                style="height: 24px; width: 24px;" /></a></td>
+                                    <td align="center" class="footer-logo social"><a href="https://vk.com/zti_ru"
+                                            target="_blank"><img alt="vk-logo" src="vk.png"
+                                                style="height: 24px; width: 24px;" /></a></td>
+                                </tr>
+                            </table>
+                        </td>
+            </td>
+
+        </tr>
+        <tr>
+            <td class="features-td" bgcolor="#ffffff">
+                <table class="table-600" cellpadding="0" cellspacing="0" width="600" align="center">
+                    <tr>
+                        <td align="center">
+                            <h1 style="font-family: Arial, Helvetica, sans-serif, 'Montserrat';">Уважаемые
+                                партнеры!</h1>
+                            <h2 style="font-family: Arial, Helvetica, sans-serif, 'Montserrat';">
+                                Компания ЗТИ празднует свое 19-летие.
+                            </h2>
+                            <p style="font-family: Arial, Helvetica, sans-serif, 'Montserrat';">
+                                С каждым годом мы растем и развиваемся, стараемся быть лучшими во всем.
+                                Сейчас мы работаем над повышением эффективности наших бизнес-процессов.
+                                Результатом станет повышение уровня клиентского сервиса. Также мы готовим
+                                для вас расширение ассортимента и уже скоро представим новые продукты.
+                            </p>
+                            <p style="font-family: Arial, Helvetica, sans-serif, 'Montserrat';">
+                                Эти и другие улучшения найдут свое отражение в новом, красивом и удобном
+                                сайте компании, который будет запущен в этом году. В общем, мы готовим много
+                                приятных изменений, которые сделают наше сотрудничество еще более удобным и
+                                продуктивным.
+                            </p>
+                            <p style="font-family: Arial, Helvetica, sans-serif, 'Montserrat';">
+                                Мы благодарим вас за то, что вы с нами все эти годы. Нам очень приятно, что
+                                мы помогаем вашему бизнесу развиваться и процветать. Дальнейшее партнерство
+                                позволит нам с вами стать еще более сильными и успешными!
+                            </p>
+                            <p style="font-family: Arial, Helvetica, sans-serif, 'Montserrat';">
+                                Приглашаем вас посетить наш стенд на выставке RosUpack,<br> которая
+                                состоится 25-28 августа в Крокус Экспо.
+                            </p>
+                            <p style="font-family: Arial, Helvetica, sans-serif, 'Montserrat';">
+                                <span>Подписывайтесь</span> на наши страницы в социальных сетях, <br>чтобы
+                                быть в курсе
+                                всех
+                                новостей.
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="blockqoute-td" bgcolor="#282694">
+                <table class="table-600" cellpadding="0" cellspacing="0" width="200" align="center">
+                    <tr>
+                        <td align="center" class="footer-logo social"><a href="https://www.instagram.com/zti.ru"
+                                target="_blank"><img alt="instagram-logo" src="insta.png"
+                                    style="height: 30px; width: 30px;" /></a></td>
+                        <td align="center" class="footer-logo social"><a href="https://www.facebook.com/zti.ru"
+                                target="_blank"><img alt="facebook-logo" src="facebook.png"
+                                    style="height: 30px; width: 30px;" /></a></td>
+                        <td align="center" class="footer-logo social"><a href="https://vk.com/zti_ru"
+                                target="_blank"><img alt="vk-logo" src="vk.png"
+                                    style="height: 30px; width: 30px;" /></a></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="footer-td" bgcolor="#241359">
+                <table class="table-600" cellpadding="0" cellspacing="0" width="600" align="center">
+                    <tr>
+                        <td class="footer-menu-td" align="center">
+                            <table cellpadding="0" cellspacing="0" max-width="600" width="100%" align="center">
+                                <tr>
+                                    <td align="center">
+                                        <p style="font-family: Arial, Helvetica, sans-serif, 'Montserrat';">
+                                            ЗТИ
+                                            Самара</p>
+                                    </td>
+                                    <td align="center">
+                                        <p style="font-family: Arial, Helvetica, sans-serif, 'Montserrat';">
+                                            ЗТИ
+                                            Москва</p>
+                                    </td>
+                                    <td align="center">
+                                        <p style="font-family: Arial, Helvetica, sans-serif, 'Montserrat';">
+                                            ЗТИ
+                                            Новосибирск</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center"><a href="tel:+78462696969"
+                                            style="font-family: Arial, Helvetica, sans-serif, 'Montserrat';">+7
+                                            (846) 269-69-69</a>
+                                    </td>
+                                    <td align="center"><a href="tel:+74996496969"
+                                            style="font-family: Arial, Helvetica, sans-serif, 'Montserrat';">+7
+                                            (499) 649-69-69</a>
+                                    </td>
+                                    <td align="center"><a href="tel:+73833636969"
+                                            style="font-family: Arial, Helvetica, sans-serif, 'Montserrat';">+7
+                                            (383) 363-69-69</a>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td align="center"><a href="mailto:smr@zti.ru"
+                                            style="font-family: Arial, Helvetica, sans-serif, 'Montserrat';">smr@zti.ru</a>
+                                    </td>
+                                    <td align="center"><a href="mailto:msk@zti.ru"
+                                            style="font-family: Arial, Helvetica, sans-serif, 'Montserrat';">msk@zti.ru</a>
+                                    </td>
+                                    <td align="center"><a href="mailto:sib@zti.ru"
+                                            style="font-family: Arial, Helvetica, sans-serif, 'Montserrat';">sib@zti.ru</a>
+                                    </td>
+
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="copyright-td" align="center">
+                            <p style="font-family: Arial, Helvetica, sans-serif, 'Montserrat';">
+                                Вы получили это письмо, так как являетесь клиентом компании
+                                <a class="copyright-link" href="https://www.zti.ru/"
+                                    style="font-family: Arial, Helvetica, sans-serif, 'Montserrat';">zti.ru</a>.
+                                <br>Чтобы не
+                                получать письма на почту, нажмите на ссылку отписки в конце письма.
+                            </p>
+                            <a class="btn" href="{{UnsubscribeUrl}}"
+                                style="font-family: Arial, Helvetica, sans-serif, 'Montserrat';">Отписаться
+                                от рассылки</a>
+                        </td>
+
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td height="30" width="850"></td>
+        </tr>
+    </table>
+    </td>
+    </tr>
+    </table>
+</body>
+
+</html>
